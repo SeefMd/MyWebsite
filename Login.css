@@ -1,0 +1,62 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: aquamarine;
+}
+.login{
+    border: lightslategray solid;
+    background-color: lightskyblue;
+    width: 35%;
+    margin: 20px;
+    margin-bottom: 100px;
+    padding-bottom: 20px;
+}
+.login-web{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(243, 10, 188);
+    margin: 3px;
+    padding: 3px;
+    font-size: 30px;
+    border-bottom: dashed lime;
+}
+form input{
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 30px;
+}
+form button{
+    margin: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
+    width: 40%;
+    padding: 4px;
+    cursor: pointer;
+}
+.pri_link{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px;
+    padding: 9px;
+}
+.seefi{
+    background-color: rgb(4, 201, 4);
+    margin: 50px;
+    color: white;
+    font-family: cursive;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+form button:hover{
+    opacity: 0.5;
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.15);
+}
+form button:active{
+    opacity: 0.4;
+}

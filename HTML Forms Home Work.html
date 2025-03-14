@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <title>Form 1</title>
+    <style>
+        /* Style for the last button */
+        input[type="button"] {
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+            padding: 10px 20px; /* Padding */
+            border: none; /* Remove borders */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+        }
+
+        /* Add hover effect */
+        input[type="button"]:hover {
+            background-color: #45a049; /* Darker green */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Home Work on HTML Forms</h1>
+    <h2>1. Form Section</h2>
+    <form action="" method="get" accept-charset="utf-8">
+        <label for="text">First Name:</label><br />
+        <input type="fname" name="fname" id="fname" value="" required><br />
+        <label for="text">Last Name:</label><br />
+        <input type="lname" name="lname" id="lname" value="" required><br />
+        <label for="Username">Username:</label><br>
+        <input type="text" placeholder="Enter your Username" id="Username" name="Username"><br>
+        <label for="pwd">Password:</label><br />
+        <input type="pwd" name="pwd" id="pwd" maxlength="12" required><br />
+        <input type="submit" name="" id="" value="submit" /> <input type="Reset" name="" id="" value="Cancil" /><br /><br />
+        
+        
+        <h2>2. Radio Button</h2>
+        <p style="color:red">i. Question 1</p>
+        <input type="radio" name="fav_Language" id="html" value="HTML" />
+        <label for="html">HTML</label><br />
+        <input type="radio" name="fav_Language" id="css" value="CSS" />
+        <label for="css">CSS</label><br />
+        <input type="radio" name="fav_Language" id="javascript" value="JavaScript" />
+        <label for="javascript">Javascript</label><br />
+        <p style="color:red">ii. Question 2</p>
+        <input type="radio" name="web_Language" id="Hardware" value="Hardware" />
+        <label for="Hardware">Hardware</label><br />
+        <input type="radio" name="web_Language" id="Software" value="Software" />
+        <label for="Software">Software</label><br />
+        <input type="radio" name="web_Language" id="Both" value="Both" />
+        <label for="both">Both</label><br />
+        <input type="submit" name="" id="" value="Apply" /> <input type="reset" name="" id="" value="Clear" /><br /><br />
+        
+        
+        <h2>3. Check Box</h2>
+       <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label><br><br>
+  <input type="submit" value="Submit">  <input type="reset" name="" id="" value="Reset" /><br /><br />
+        
+        
+        <h2>4. Other Forms</h2>
+        
+        <label for="favcolor">Select your favorite color:</label><br />
+  <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+  <input type="submit" value="Submit"><br /><br />
+        <label for="birthday">Birthday:</label>
+        <input type="date" name="birthday" id="birthday" value="" /><br />
+  <label for="birthdaytime">Birthday (date and time):</label><br />
+  <input type="datetime-local" id="birthdaytime" name="birthdaytime"><br />
+  <label for="bdaymonth">Birthday (month and year):</label><br />
+  <input type="month" id="bdaymonth" name="bdaymonth"><br />
+  <label for="appt">Select a time:</label>
+  <input type="time" id="appt" name="appt"><br />
+  <label for="week">Select a week:</label>
+  <input type="week" id="week" name="week"><br />
+  <input type="submit" value="Submit">  <input type="reset" name="" id="" value="Reset" /><br />
+  <label for="quantity">Quantity (between 1 and 10):</label><br />
+  <input type="number" id="quantity" name="quantity" min="1" max="10"><br />
+  <label for="quantity">Quantity:</label>
+  <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="50"> <br /><input type="submit" value="Mirkanessi"> <input type="reset" name="" id="" value="Haqi" /><br />
+  <label for="homepage">Add your homepage:</label>
+  <input type="url" placeholder="URL.." id="homepage" name="homepage"><br />
+  <label for="search">Search:</label><br />
+  <input type="search" placeholder="Search.." name="search" id="search" value="" /><br />
+  <label for="Number">Number:</label><br>
+  <input type="tel" id="phone" name="phone"><br>
+  <input type="submit" value="Submit"><br /><br />
+
+
+
+  <h3>5. Selection of Elements</h3>
+  <label for="subject">Choose Your Favorite Subject:</label><br />
+  <select id="Subjects" name="Subjects">
+    <option value="Maths">Maths</option>
+    <option value="Chemistry">Chemistry</option>
+    <option value="Biology">Biology</option>
+    <option value="Physics">Physics</option>
+    <option value="English">English</option>
+  </select>
+  <input type="submit"><br />
+
+  <label for="department">Choose Your Department:</label><br />
+  <select id="Departments" name="Departments">
+    <option value="Computer skill">Computer Skill</option>
+    <option value="Cryptocurrency">Cryptocurrency</option>
+    <option value="Web Development" selected>Web Development</option>
+    <option value="Forx trade">Forx Trade</option>
+    <option value="Amazon Affliate">Amazon Affliate</option>
+    <option value="Marketing">Marketing</option>
+  </select>
+  <input type="submit"><br /><br />
+  
+  <h3>Allow Multiple Selections</h3>
+  <label for="department">Choose Your Department:</label><br />
+  <select id="Departments" name="Departments" size="6" Multiple>
+    <option value="Computer skill">Computer Skill</option>
+    <option value="Cryptocurrency">Cryptocurrency</option>
+    <option value="Web Development">Web Development</option>
+    <option value="Forx trade" disabled>Forx Trade</option>
+    <option value="Amazon Affliate">Amazon Affliate</option>
+    <option value="Marketing">Marketing</option>
+  </select>
+  <input type="submit" name="" id="" value="Mirkanessi" /><br /><br />
+  
+    <label for="phone">Phone No:</label>
+  <select id="tel" name="phone">
+    <option value="+996">+996</option>
+    <option value="+445">+445</option>
+    <option value="+251" selected>+251</option>
+    <option value="+254">+254</option>
+    <option value="+994">+994</option>
+  </select>
+  <input type="phone" placeholder="9151***93" name="phone" id="" value="" />
+      <br />
+        <label for="phone">TelePhone:</label>
+        <input type="tel" name="phone" id="phone" placeholder="123456789" value="" /><br /><br />
+        <label for="range">Range:</label>
+        <input type="Range" name="Range" id="Range" value="" /><br /><br>
+
+
+        <label for="myfile">Select a file:</label>
+  <input type="file" id="Upload" name="Upload"><br>
+  <input type="submit" value="Save">  <input type="submit" value="Haqi" name="" id="">
+  <br><br>
+
+  
+
+
+        
+        <h2>Input Button</h2>
+        <input type="button" Onclick="alert('Hello World!')" value="Click Me!">
+    </form>
+</body>
+</html>
